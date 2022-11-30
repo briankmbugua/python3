@@ -9,3 +9,8 @@ b = 10 #b is of type int
 print(b)
 b = "brian" #b is now of type str
 print(b)
+#assing value to many variables
+e,f,g = 10, "brian", 30;
+print(e, f, g)
+i = j = k = "orange"
+print(i + j + k)
