@@ -17,4 +17,20 @@ print(b.strip())#remove white space from the beginning and the end
 #replace strings
 print(b.replace("B", "j"))#replace B with j
 #split strings
-c = ""
+c = "Hello, world"
+print(c.split(","))#return ['Hello', ' world']
+#string concantation
+first = "brian"
+second = "mbugua"
+fullname = first + second
+print(fullname)#string concantation
+age = 36
+txt = "my name is and am {}"
+print(txt.format(age))#age will be the placeholders are i.e {}
+#yiu can use index numbers {0} to be sure the arguments are placed in the 
+#correct placeholders
+quantity = 3 #0
+itemno = 567 #1
+price = 49.95 #2
+myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
+print(myorder.format(quantity, itemno, price))
