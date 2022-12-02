@@ -12,3 +12,9 @@
 ###### you can get the type of variable using the type() function
 # single or Double quotes
 ###### String variables can be created using single or double quotes
+# formatstrings.py
+###### string.format, upper(), lower() etc...
+# casting.py
+###### change type or assing a type in variabe creation
+# numberz.py
+###### int float complex 
