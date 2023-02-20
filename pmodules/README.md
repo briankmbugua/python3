@@ -31,5 +31,21 @@ It is only executed once when the module is first imported
 import foo
 foo.bar()
  ```
-in most cases this is bad practice and shoulfd be avoided as it can create unintended side-effects
+in most cases this is bad practice and should be avoided as it can create unintended side-effects
+
+# MODULE DEBUG TRICK
+When you are writting a module intended to be imported by another script, you want to test what you have written.This is where you can use the special __name__ variable!
+it set to __main__ when the module is run directly and is set to the name of the module when imported to another script
+
+ ```python
+ # foo.py
+ def bar():
+    print('sorry we dont serve minors')
+
+if __name__ == "__main__":
+    #Bar will be invoked if this module is being run directly, but not via import
+    bar()
+ ```
+
+
 
